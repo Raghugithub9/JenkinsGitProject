@@ -47,8 +47,9 @@ public class BaseClass {
 			options.addArguments("--no-sandbox"); 
 			options.addArguments("--disable-dev-shm-using") ;
 			options.addArguments("--window-size=1920,1080");
-			options.addArguments("--headless") ;
-			driver = new ChromeDriver(options);
+			options.addArguments("--headless") ;;
+			driver = new RemoteWebDriver(new URL("http://3.87.30.31:4444"),options);
+
 		}
 		
 		SetDriver(driver);
