@@ -22,7 +22,7 @@ public class LoginTest extends BaseClass {
 		String actMsg = errorMessage.getText();
 		String expMsg = "The email or password you have entered is invalid.";
 		Assert.assertEquals(actMsg,expMsg);
-		
+		//hi
 		
 	}
 	
