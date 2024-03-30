@@ -36,7 +36,7 @@ public class BaseClass {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setPlatform(Platform.LINUX);	
 			cap.setBrowserName("chrome");
-			driver = new RemoteWebDriver(new URL("http://18.205.27.15:4444"),cap);
+			driver = new RemoteWebDriver(new URL("http://3.88.28.3:4444"),options);
 		}
 		
 		else {
@@ -48,7 +48,7 @@ public class BaseClass {
 			options.addArguments("--disable-dev-shm-using") ;
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--headless") ;;
-			driver = new RemoteWebDriver(new URL("http://3.88.28.3:4444"),options);
+			driver = new ChromeDriver(options);
 
 		}
 		
